@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Census </title>
+</head>
+
+<body>
+	
+    	<form action="{% url wtfcensus %}" method="post">
+    		{% csrf_token %}
+    		{{ form.as_p }}
+    	<p><input type="submit" value="Submit"></p>
+    	</form>
+	
+</body>
+</html>
+
